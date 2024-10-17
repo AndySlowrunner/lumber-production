@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 8px;
+    font-family: "Roboto", sans-serif;
+    background-image: url(../images/hero-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+p {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #090909;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    margin: 16px 0;
+    text-align: end;
+}
+
+
+
+a {
+    text-decoration: none;
+}
