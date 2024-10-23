@@ -154,12 +154,27 @@
         <section class="form">
             <h2>if you have any questions</h2>
             <form class="our-form">
-                <input type="text" placeholder="Your name*" required>
-                <input type="email" placeholder="Your email*" required>
-                <input type="number" placeholder="Your phone">
-                <textarea name="message" placeholder="Your message"></textarea>
-                <p>You accept the terms of the <a href="">privacy policy</a></p>
+                <div class="form-div">
+                    <label for="name">Your name*</label>
+                    <input type="text" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-div">
+                    <label for="email">Your email*</label>
+                    <input type="email" name="email" placeholder="youremail@mail.com" required>
+                </div>
+                <div class="form-div">
+                    <label for="number">Your phone*</label>
+                    <input type="number" name="number" placeholder="+380 XX XXX XXXX">
+                </div>
+                <div class="form-div">
+                    <label for="message">Ask your question*</label>
+                    <textarea name="message" placeholder="Your message"></textarea>
+                </div>
                 <button class="form-btn" type="submit">Send</button>
+                <div class="accept">
+                    <input type="checkbox">
+                    <p>I accept the terms of the <a href="">privacy policy</a></p>
+                </div>
             </form>
         </section>
     </main>
