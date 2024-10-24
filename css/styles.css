@@ -230,6 +230,54 @@ button {
     margin: 24px;
 }
 
+.prod {
+    max-width: 620px;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+.prod-item {
+    position: relative;
+
+    h2 {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        font-size: 14px;
+        color: var(--light-color);
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.prod-items {
+    display: grid;
+    grid-template-areas: 
+        "item-1 item-2"
+        "item-3 item-2"
+        "item-4 item-4";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+}
+
+#item-1 {
+    grid-area: item-1;
+}
+#item-2 {
+    grid-area: item-2;
+    img {
+        height: 100%;
+    }
+}
+#item-3 {
+    grid-area: item-3;
+}
+#item-4 {
+    grid-area: item-4;
+}
+
 .prod > button {
     margin: 16px auto 32px;
 }
@@ -271,7 +319,7 @@ button {
         border-radius: 4px;
         height: 160px;
         background-color: transparent;
-        padding-left: 16px;
+        padding: 16px;
         resize: none;
     }
 
