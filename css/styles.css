@@ -284,13 +284,13 @@ button {
 
 .our-form {
     background-image: url(../images/mob-texture.png);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    max-width: 580px;
-    margin: 0 auto;
+    max-width: 480px;
+    margin: 2px auto 32px;
     padding: 24px;
 }
 
@@ -340,4 +340,21 @@ button {
         width: 16px; 
         height: 16px;
     }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 32px 8px 22px;
+
+    background-color: var(--dark-color);
+
+    iframe {
+        border-radius: 4px;
+    }
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
 }
