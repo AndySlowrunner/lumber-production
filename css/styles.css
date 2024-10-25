@@ -127,23 +127,79 @@ a {
     }
 }
 
-.slider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 768px;
-    margin: 0 auto;
-    
+.slider-section {
+    margin: 16px;
+
     p {
-        display: flex;
-        margin: 24px;
+        margin: 8px;
     }
 }
 
-.slider-container {
-    height: 420px;
-    width: 344px;
-    border: 3px solid var(--primery-color);
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: auto;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: transform 0.5s ease-in-out, top 0.5s, z-index 0.5s;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.active {
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+    opacity: 1;
+}
+
+.prev-slide {
+    top: 25%;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.5;
+}
+
+.next-slide {
+    top: 75%;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.5;
+}
+
+.prev,
+.next {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.next {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .product-card {
@@ -187,7 +243,7 @@ a {
 
 }
 
-button {
+.btn {
     display: block;
     border-radius: 8px;
     border: none;
@@ -344,17 +400,69 @@ button {
 
 .footer-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     padding: 32px 8px 22px;
 
     background-color: var(--dark-color);
 
     iframe {
         border-radius: 4px;
+        margin: 0 24px;
     }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 32px;
+    padding: 24px 24px 30px 0;
+
+    h2 {
+        font-size: 20px;
+        color: var(--light-color);
+        text-align: end;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 16px;
+        margin: 0;
+
+        a {
+            margin: 0;
+        }
+    }
+}
+
+.icon + .icon {
+    margin-left: 30px;
 }
 
 .icon {
     width: 32px;
     height: 32px;
+}
+
+.footer-sign {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-top: 2px solid var(--light-color);
+    padding: 16px 0 0 8px;
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        color: var(--light-color);
+    }
 }

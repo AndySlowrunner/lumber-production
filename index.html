@@ -67,9 +67,20 @@
                 </li>
             </ul>
         </section>
-        <section class="slider">
+        <section class="slider-section">
             <h2>Our production</h2>
-            <div class="slider-container">
+            <div class="slider">
+                    <div class="slide" id="slide1">
+                        <img src="./images/mob-up-image.png" alt="gallery-1">
+                    </div>
+                    <div class="slide" id="slide2">
+                        <img src="./images/mob-center-image.png" alt="gallery-2">
+                    </div>
+                    <div class="slide" id="slide3">
+                        <img src="./images/mob-down-image.png" alt="gallery-3">
+                    </div>
+                    <img src="./icons/up.svg" class="slider-button prev">
+                    <img src="./icons/down.svg" class="slider-button next">
             </div>
             <p>
                 Lorem ipsum dolor sit amet consectetur. Eget cursus mi eget quam. Ut purus egestas eleifend at at. Ut vel in amet posuere donec
@@ -91,7 +102,7 @@
                     <a href="">More details</a>
                     <img src="./icons/arrow.svg" alt="">
                 </div>
-                <button type="button">Order</button>
+                <button type="button" class="btn">Order</button>
             </div>
             <p>
                 Lorem ipsum dolor sit amet consectetur. Eget cursus mi eget quam. Ut purus egestas eleifend at at. Ut vel in amet
@@ -110,7 +121,7 @@
                     <a href="">More details</a>
                     <img src="./icons/arrow.svg" alt="">
                 </div>
-                <button type="button">Order</button>
+                <button type="button" class="btn">Order</button>
             </div>
             <div class="prod">
                 <h2>Our products</h2>
@@ -132,7 +143,7 @@
                         <img src="./images/mob-product-4.png" alt="decoration">
                     </li>
                 </ul>
-                <button type="button">Gallery</button>
+                <button type="button" class="btn">Gallery</button>
             </div>
             <div class="product-card bgr-3">
                 <h2>lumber</h2>
@@ -146,7 +157,7 @@
                     <a href="">More details</a>
                     <img src="./icons/arrow.svg" alt="">
                 </div>
-                <button type="button">Order</button>
+                <button type="button" class="btn">Order</button>
             </div>
             <p>
                 Lorem ipsum dolor sit amet consectetur. Eget cursus mi eget quam. Ut purus egestas eleifend at at. Ut vel in amet
@@ -165,7 +176,7 @@
                     <a href="">More details</a>
                     <img src="./icons/arrow.svg" alt="">
                 </div>
-                <button type="button">Order</button>
+                <button type="button" class="btn">Order</button>
             </div>
         </section>
         <section class="form">
@@ -187,7 +198,7 @@
                     <label for="message">Ask your question*</label>
                     <textarea name="message" placeholder="Write something"></textarea>
                 </div>
-                <button class="form-btn" type="submit">Send</button>
+                <button class="form-btn btn" type="submit">Send</button>
                 <div class="accept">
                     <input type="checkbox" required>
                     <p>I accept the terms of the <a href="">privacy policy</a></p>
@@ -199,15 +210,15 @@
         <div class="footer-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.0965964860934!2d35.03702247631723!3d48.467391171281804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2e5dae5a711%3A0x391d714fb297ebae!2z0L_RgNC-0YHQv9C10LrRgiDQlNC80LjRgtGA0LAg0K_QstC-0YDQvdC40YbRjNC60L7Qs9C-LCA3Nywg0JTQvdGW0L_RgNC-LCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNDkwMDA!5e1!3m2!1suk!2sua!4v1729763205044!5m2!1suk!2sua"
-                width="344" height="232" style="border:0;" allowfullscreen="" loading="lazy"
+                style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
             <div class="contacts">
                 <h2>contacts</h2>
                 <nav>
-                    <a href="https://maps.app.goo.gl/fMRAZZvcfGUdJ3x98">Dnipro, av. Yavornitzky, 77</a>
-                    <a href="tel:+380991234567">+38 099 1234567</a>
-                    <a href="mailto:lumber@gmail.com">lumber@gmail.com</a>
+                    <a href="https://maps.app.goo.gl/fMRAZZvcfGUdJ3x98" class="nav-link">Dnipro, av. Yavornitzky, 77</a>
+                    <a href="tel:+380991234567" class="nav-link">+38 099 1234567</a>
+                    <a href="mailto:lumber@gmail.com" class="nav-link">lumber@gmail.com</a>
                 </nav>
                 <div class="social">
                     <img src="./icons/facebook.svg" class="icon">
@@ -215,7 +226,12 @@
                     <img src="./icons/telegram.svg" class="icon">
                 </div>
             </div>
+            <div class="footer-sign">
+                <img src="./icons/copyrigth.svg">
+                <p>AFZ 2024</p>
+            </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
