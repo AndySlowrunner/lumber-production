@@ -535,3 +535,10 @@ a {
         color: var(--light-color);
     }
 }
+
+@media (min-width: 769px) {
+    header {
+        background-image: url(../images/hero-desktop.png);
+        height: 680px;
+    }
+}
