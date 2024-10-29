@@ -70,6 +70,10 @@ header {
     justify-content: space-between;
 }
 
+.desktop-menu {
+    display: none;
+}
+
 .mobile-menu {
     display: none;
     width: 100%;
@@ -144,7 +148,7 @@ nav {
     text-align: end;
 
     a {
-        margin-left: 8px;
+        margin-left: 6px;
     }
 }
 
@@ -537,8 +541,114 @@ a {
 }
 
 @media (min-width: 769px) {
+    h2 {
+        font-size: 36px;
+    }
+
     header {
+        position: relative;
         background-image: url(../images/hero-desktop.png);
-        height: 680px;
+        height: 100vh;
+        
+        h1 {
+            position: absolute;
+            display: block;
+            bottom: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 48px;
+            margin-top: 0;
+            max-width: 590px;
+        }
+    }
+
+
+    .header-container {
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 20px 20px 0;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+
+        ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        a {
+            position: relative;
+            font-family: var(--roboto-condensed);
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: color 250ms ease-in-out;
+
+            &:hover {
+                color: #51915f;
+            }
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: #51915f;
+            transition: width 250ms ease-in-out;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+    }
+
+    .desktop-logo {
+        cursor: pointer;
+        transition: transform 250ms ease-in-out;
+
+        &:hover {
+            transform: scale(0.7);
+        }
+    }
+
+    .header-navigation {
+        margin-top: 20px;
+
+        a {
+            margin-left: 10px;
+
+            &:hover {
+                color: #51915f;
+            }
+        }
+    }
+
+    .location {
+        display: flex;
+        justify-content: end;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .phone {
+        display: flex;
+        justify-content: end;
+        font-size: 24px;
+    }
+
+    .about {
+        max-width: 940px;
+        margin: 0 auto;
+
+        p {
+            font-size: 24px;
+        }
     }
 }

@@ -19,9 +19,28 @@
             <div class="menu">
                 <picture>
                     <source srcset="./icons/logo.svg" media="(max-width: 768px)"/>
-                    <img src="./icons/desktop-logo.svg" alt="logo">
+                    <img src="./icons/desktop-logo.svg" alt="logo" class="desktop-logo">
                 </picture>
-                <img src="./icons/burger-icon.svg" alt="burger-menu" id="js-open">
+                <div class="desktop-menu">
+                    <ul>
+                        <li>
+                            <a href="#home">home</a>
+                        </li>
+                        <li>
+                            <a href="#products">products</a>
+                        </li>
+                        <li>
+                            <a href="#delivery">delivery</a>
+                        </li>
+                        <li>
+                            <a href="#connection">connection</a>
+                        </li>
+                        <li>
+                            <a href="#location">contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="./icons/burger-icon.svg" alt="burger-menu" class="burger-menu" id="js-open">
                 <div class="mobile-menu" id="js-menu">
                     <div class="menu-content">
                         <span class="close-icon" id="js-close">&times;</span>
@@ -57,13 +76,19 @@
                     </div>
                 </div>
             </div>
-            <nav>
+            <nav class="header-navigation">
                 <div class="location">
-                    <img src="./icons/location-icon.svg" alt="location">
+                    <picture>
+                        <source srcset="./icons/location-icon.svg" media="(max-width: 768px)" />
+                        <img src="./icons/desktop-location-icon.svg" alt="location">
+                    </picture>
                     <a href="https://maps.app.goo.gl/fMRAZZvcfGUdJ3x98">Dnipro, av. Yavornitzky, 77</a>
                 </div>
                 <div class="phone">
-                    <img src="./icons/phone-icon.svg" alt="phone">
+                    <picture>
+                        <source srcset="./icons/phone-icon.svg" media="(max-width: 768px)" />
+                        <img src="./icons/desktop-phone-icon.svg" alt="phone">
+                    </picture>
                     <a href="tel:+380991234567">+38 099 1234567</a>
                 </div>
             </nav>
