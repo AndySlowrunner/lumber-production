@@ -62,7 +62,7 @@ header {
 }
 
 .header-container {
-    padding: 9px;
+    padding: 9px 15px;
 }
 
 .menu {
@@ -211,8 +211,8 @@ a {
 .slider {
     position: relative;
     width: 100%;
-    max-width: 600px;
-    height: 400px;
+    max-width: 800px;
+    height: 440px;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 15px;
@@ -543,6 +543,11 @@ a {
 @media (min-width: 769px) {
     h2 {
         font-size: 36px;
+        margin: 50px 0;
+    }
+    
+    p {
+        font-size: 24px;
     }
 
     header {
@@ -646,9 +651,66 @@ a {
     .about {
         max-width: 940px;
         margin: 0 auto;
+    }
 
-        p {
-            font-size: 24px;
+    .production {
+        margin-top: 0;
+        max-width: 940px;
+
+        ul {
+            grid-template-columns: 1fr 1fr;
+            
+            .card > h2 {
+                margin: 0 0;
+                left: 60px;
+                bottom: 30px;
+            }
         }
+
+    }
+
+    .slider-section > h2 {
+        margin-bottom: 0;
+    }
+    
+    .slide {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+        transition: transform 0.5s ease-in-out, left 0.5s, z-index 0.5s;
+    }
+
+    .active {
+        transform: translate(-50%, -50%) scale(1);
+        z-index: 2;
+        opacity: 1;
+    }
+
+    .prev-slide {
+        left: 25%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    .next-slide {
+        left: 75%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    .prev,
+    .next {
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 250ms ease-in-out;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+        left: unset;
     }
 }

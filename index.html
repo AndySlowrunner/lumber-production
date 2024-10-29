@@ -130,16 +130,31 @@
             <h2>Our production</h2>
             <div class="slider">
                     <div class="slide" id="slide1">
-                        <img src="./images/mob-up-image.png" alt="gallery-1">
+                        <picture>
+                            <source srcset="./images/mob-up-image.png" media="(max-width: 768px)" />
+                            <img src="./images/desktop-left-image.png" alt="gallery-1">
+                        </picture>
                     </div>
                     <div class="slide" id="slide2">
-                        <img src="./images/mob-center-image.png" alt="gallery-2">
+                        <picture>
+                            <source srcset="./images/mob-center-image.png" media="(max-width: 768px)" />
+                            <img src="./images/desktop-center-image.png" alt="gallery-2">
+                        </picture>
                     </div>
                     <div class="slide" id="slide3">
-                        <img src="./images/mob-down-image.png" alt="gallery-3">
+                        <picture>
+                            <source srcset="./images/mob-down-image.png" media="(max-width: 768px)" />
+                            <img src="./images/desktop-right-image.png" alt="gallery-3">
+                        </picture>
                     </div>
-                    <img src="./icons/up.svg" class="slider-button prev">
-                    <img src="./icons/down.svg" class="slider-button next">
+                    <picture>
+                        <source srcset="./icons/up.svg" media="(max-width: 768px)" />
+                        <img src="./icons/desktop-left.svg" class="slider-button prev">
+                    </picture>
+                    <picture>
+                        <source srcset="./icons/down.svg" media="(max-width: 768px)">
+                        <img src="./icons/desktop-right.svg" class="slider-button next">
+                    </picture>
             </div>
             <p>
                 Lorem ipsum dolor sit amet consectetur. Eget cursus mi eget quam. Ut purus egestas eleifend at at. Ut vel in amet posuere donec
