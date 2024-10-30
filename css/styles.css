@@ -480,8 +480,12 @@ a {
 
     iframe {
         border-radius: 4px;
-        margin: 0 24px;
     }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .contacts {
@@ -489,7 +493,7 @@ a {
     flex-direction: column;
     align-items: end;
     gap: 32px;
-    padding: 24px 24px 30px 0;
+    padding: 24px 16px 30px 0;
 
     h2 {
         font-size: 20px;
@@ -537,6 +541,15 @@ a {
         font-size: 14px;
         letter-spacing: 0.05em;
         color: var(--light-color);
+    }
+
+    a {
+        margin-left: auto;
+        text-transform: uppercase;
+
+        &:hover {
+            color: #51915f;
+        }
     }
 }
 
@@ -825,72 +838,147 @@ a {
         }
     }
 
-        .our-form {
-            gap: 20px;
-            max-width: 940px;
-            margin-bottom: 0;
-            padding: 50px 160px 58px;
+    .our-form {
+        gap: 20px;
+        max-width: 940px;
+        margin-bottom: 0;
+        padding: 50px 160px 58px;
+    }
+
+    .form-div {
+        gap: 20px;
+
+        label {
+            font-size: 24px;
         }
-    
-        .form-div {
-            gap: 20px;
-    
-            label {
+
+        input {
+            border-radius: 10px;
+            height: 70px;
+            padding-left: 25px;
+
+            &::placeholder {
+                font-size: 20px;
+            }
+        }
+
+        textarea {
+            border-radius: 10px;
+            height: 240px;
+            padding: 25px;
+
+            &::placeholder {
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    .form-btn {
+        margin: 30px auto;
+        width: 180px;
+        height: 60px;
+        font-size: 20px;
+
+        &:hover {
+            background-color: #55311a;
+            box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    .accept {
+        gap: 20px;
+        align-items: center;
+
+        input {
+            width: 20px;
+            height: 20px;
+            background: transparent;
+        }
+
+        p {
+            font-size: 16px;
+            color: #7b6445;
+
+            a {
+                color: #693d20;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 8px 50px;
+    }
+
+    .wrapper {
+        flex-direction: row;
+        margin: 100px auto;
+        max-width: 940px;
+        gap: 75px;
+    }
+
+    iframe {
+        /* width: 455px; */
+        height: 380px;
+    }
+
+    .contacts {
+        gap: 0;
+        padding: 0;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+
+        nav {
+            gap: 30px;
+            margin-bottom: 98px;
+
+            a {
                 font-size: 24px;
-            }
-    
-            input {
-                border-radius: 10px;
-                height: 70px;
-                padding-left: 25px;
 
-                &::placeholder {
-                    font-size: 20px;
-                }
-            }
-    
-            textarea {
-                border-radius: 10px;
-                height: 240px;
-                padding: 25px;
-
-                &::placeholder {
-                    font-size: 20px;
-                }
-            }
-    
-        }
-    
-        .form-btn {
-            margin: 30px auto;
-            width: 180px;
-            height: 60px;
-            font-size: 20px;
-
-            &:hover {
-                background-color: #55311a;
-                box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.4);
-            }
-        }
-    
-        .accept {
-            gap: 20px;
-            align-items: center;
-    
-            input {
-                width: 20px;
-                height: 20px;
-                background: transparent;
-            }
-
-            p {
-                font-size: 16px;
-                color: #7b6445;
-
-                a {
-                    color: #693d20;
-                    text-decoration: underline;
+                &:hover {
+                    color: #40794d;
                 }
             }
         }
+    }
+
+    .icon+.icon {
+        margin-left: 40px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        
+        cursor: pointer;
+        transition: transform 250ms ease-in-out;
+
+        &:hover {
+            transform: scale(0.7);
+        }            
+    }
+
+    .footer-sign {
+        width: 100%;
+        max-width: 940px;
+        gap: 16px;
+        margin: 0 auto;
+        padding: 30px 0 0 0;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+        
 }
