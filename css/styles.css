@@ -42,7 +42,7 @@ h2 {
 
 header {
     height: 320px;
-    background-image: url(../images/hero-mobile.png);
+    background-image: url(../images/hero-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% -4px;
@@ -565,7 +565,7 @@ a {
 
     header {
         position: relative;
-        background-image: url(../images/hero-desktop.png);
+        background-image: url(../images/hero-desktop.jpg);
         height: 100vh;
         
         h1 {
@@ -734,7 +734,7 @@ a {
     }
 
     .product-card {
-        background-image: url(../images/desktop-image-1.png);
+        background-image: url(../images/desktop-image-1.jpg);
 
         height: 100%;
         max-width: 100%;
@@ -784,15 +784,15 @@ a {
     }
 
     .bgr-2 {
-        background-image: url(../images/desktop-image-2.png);
+        background-image: url(../images/desktop-image-2.jpg);
     }
 
     .bgr-3 {
-        background-image: url(../images/desktop-image-3.png);
+        background-image: url(../images/desktop-image-3.jpg);
     }
 
     .bgr-4 {
-        background-image: url(../images/desktop-image-4.png);
+        background-image: url(../images/desktop-image-4.jpg);
     }
 
     .prod {
@@ -806,11 +806,15 @@ a {
     }
 
     .prod-item > h2 {
-            left: 60px;
-            bottom: 40px;
-            font-size: 32px;
-            margin: 0;
-        }
+        left: 60px;
+        bottom: 40px;
+        font-size: 32px;
+        margin: 0;
+    }
+
+    #item-2 img {
+        border-radius: 10px;
+    }
 
     .prod-items {
         grid-template-areas:
